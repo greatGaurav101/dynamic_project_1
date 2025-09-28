@@ -42,13 +42,11 @@ public class FileAccess {
 		int maxcount=0;
 		Set<String> ks = hs.keySet();
 		for(String st:ks) {
-			if(hs.get(st)>maxcount) {
+			if(hs.get(st)>= maxcount) {
 				maxcount = hs.get(st);
 			}
 		}
 		
-		System.out.println(maxcount);
-		
-		
+		System.out.println(maxcount);		
 	}
 }
