@@ -29,24 +29,25 @@ public class FileAccess {
 		}
 		System.out.println(line);
 		String[] sp = line.split(" ");
-		
-		for(String st : sp) {
-			if(hs.containsKey(st)) {
-				hs.put(st,hs.get(st)+1);
-			}
-			else {
-				hs.put(st,1);
+
+		for (String st : sp) {
+			if (hs.containsKey(st)) {
+				hs.put(st, hs.get(st) + 1);
+			} else {
+				hs.put(st, 1);
 			}
 		}
 		System.out.println(hs);
-		int maxcount=0;
+		int maxcount = 0;
 		Set<String> ks = hs.keySet();
-		for(String st:ks) {
-			if(hs.get(st)>= maxcount) {
+
+		for (String st : ks) {
+			if (hs.get(st) >= maxcount) {
 				maxcount = hs.get(st);
 			}
 		}
-		
-		System.out.println(maxcount);		
+
+		System.out.println(maxcount);
+
 	}
 }
