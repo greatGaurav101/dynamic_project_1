@@ -4,5 +4,5 @@ public interface DBService {
 
 	public void connectDB();
 
-	public boolean verifyLogin(String username , String password);
+	public boolean verifyLogin(String username, String password);
 }
